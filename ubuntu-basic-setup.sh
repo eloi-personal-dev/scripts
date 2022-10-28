@@ -235,9 +235,7 @@ EOF
 rootNanoConfig() {
   cat <<EOF >"/root/.nanorc"
 set softwrap
-set smooth
 set constantshow
-set morespace
 set tabstospaces
 bind ^Z suspend main
 
@@ -257,9 +255,7 @@ EOF
 userNanoConfig() {
   cat <<EOF >"/home/$adminUser/.nanorc"
 set softwrap
-set smooth
 set constantshow
-set morespace
 set tabstospaces
 bind ^Z suspend main
 
