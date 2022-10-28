@@ -451,7 +451,7 @@ mainMenu() {
     echo -e "${WHITE}Here are the choices...${RESET}\n"
     echo -e "${WHITE} -------- Choice -------------------------  Function -------------------------  Description ${RESET} "
     echo -e " ${GREEN}[${WHITE} [1] ${GREEN}] ${GREEN} [${WHITE} Default Programs ${GREEN}]  ${WHITE}Install Basic Linux Applications ${RESET} "
-    echo -e " ${GREEN}[${WHITE} [2] ${GREEN}] ${GREEN} [${WHITE} Static IP ${GREEN}]  ${WHITE}Configure Staic IP ${RESET} "
+    echo -e " ${GREEN}[${WHITE} [2] ${GREEN}] ${GREEN} [${WHITE} Static IP ${GREEN}]  ${WHITE}Configure a Static IP ${RESET} "
     echo -e " ${GREEN}[${WHITE} [3] ${GREEN}] ${GREEN} [${WHITE} Exit ${GREEN}] \n"
     echo -ne "${WHITE}Select Option ${GREEN}[${WHITE} Number ${GREEN}]${RESET}: "
     read -r menu
