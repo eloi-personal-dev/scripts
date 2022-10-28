@@ -51,7 +51,7 @@ progressBar() {
 }
 
 progressITED() {
-  BAR="S u p p o r t IT-ED.com ..."
+  BAR="... Support IT-ED.com ..."
   echo -e "\n${WHITE}Un moment SVP...\n"
   for i in {1..28}; do
     echo -ne "${YEL}\r${BAR:0:$i}${RESET}" # print $i chars of $BAR from 0 position
@@ -59,6 +59,18 @@ progressITED() {
   done
   echo
   echo -e "\n${GREEN}Prêt${RESET}"
+  echo
+}
+
+progressITEDFin() {
+  BAR="... Support IT-ED.com ..."
+  echo -e "\n${WHITE}Un moment SVP...\n"
+  for i in {1..28}; do
+    echo -ne "${YEL}\r${BAR:0:$i}${RESET}" # print $i chars of $BAR from 0 position
+    sleep .1                               # wait 100ms between "frames"
+  done
+  echo
+  echo -e "\n${GREEN}Terminé${RESET}"
   echo
 }
 
@@ -475,7 +487,7 @@ mainMenu() {
     3)
       header
       echo -e "${GREEN}[${WHITE} ${GREEN}#${RESET} ${GREEN}]${RESET} ${WHITE}Good-Bye...${RESET}\n"
-      progressITED
+      progressITEDFin
       echo -e ""
       break
       echo -e "${RED}#${RESET} ${WHITE}Please Reboot. Reboot Required! \n"
