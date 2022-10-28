@@ -362,7 +362,7 @@ EOF
 # shellcheck disable=SC2086
 netplanStaticIP() {
   # Create Backup
-  newNetPlan="/etc/netplan/"
+  newNetPlan="/etc/netplan/00-static-ip.yaml"
   defaultNetPlan=$(find /etc/netplan/ -name "00-installer-config.yaml")
   /bin/cp -rf "${defaultNetPlan}" "/etc/netplan/netplan-default-$(date -I).yaml.backup"
   # Retrieves NIC Information
@@ -449,7 +449,8 @@ mainMenu() {
   while true; do
     echo -e "${WHITE}#${RESET} ${GREEN}Debian Setup Main Menu${RESET}\n"
     echo -e "${WHITE}Here are the choices...${RESET}\n"
-    echo -e "${WHITE} -------- Choice -------------------------  Function -------------------------  Description ${RESET} "
+    echo -e "${GREEN}[${WHITE}choice${GREEN}] ${GREEN} [${WHITE} Function ${GREEN}] ${WHITE}Description ${RESET} "
+    echo -e ""
     echo -e " ${GREEN}[${WHITE} [1] ${GREEN}] ${GREEN} [${WHITE} Default Programs ${GREEN}]  ${WHITE}Install Basic Linux Applications ${RESET} "
     echo -e " ${GREEN}[${WHITE} [2] ${GREEN}] ${GREEN} [${WHITE} Static IP ${GREEN}]  ${WHITE}Configure a Static IP ${RESET} "
     echo -e " ${GREEN}[${WHITE} [3] ${GREEN}] ${GREEN} [${WHITE} Exit ${GREEN}] \n"
