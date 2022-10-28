@@ -449,8 +449,9 @@ mainMenu() {
   while true; do
     echo -e "${WHITE}#${RESET} ${GREEN}Debian Setup Main Menu${RESET}\n"
     echo -e "${WHITE}Here are the choices...${RESET}\n"
+    echo -e "${WHITE} -------- Choice -------------------------  Function -------------------------  Description ${RESET} "
     echo -e " ${GREEN}[${WHITE} [1] ${GREEN}] ${GREEN} [${WHITE} Default Programs ${GREEN}]  ${WHITE}Install Basic Linux Applications ${RESET} "
-    echo -e " ${GREEN}[${WHITE} [2] ${GREEN}] ${GREEN} [${WHITE} Set Static IP ${GREEN}]  ${WHITE}Staic IP ${RESET} "
+    echo -e " ${GREEN}[${WHITE} [2] ${GREEN}] ${GREEN} [${WHITE} Static IP ${GREEN}]  ${WHITE}Configure Staic IP ${RESET} "
     echo -e " ${GREEN}[${WHITE} [3] ${GREEN}] ${GREEN} [${WHITE} Exit ${GREEN}] \n"
     echo -ne "${WHITE}Select Option ${GREEN}[${WHITE} Number ${GREEN}]${RESET}: "
     read -r menu
