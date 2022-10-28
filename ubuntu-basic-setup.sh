@@ -364,7 +364,7 @@ netplanStaticIP() {
   # Create Backup
   newNetPlan="/etc/netplan/00-static-ip.yaml"
   defaultNetPlan=$(find /etc/netplan/ -name "00-installer-config.yaml")
-  /bin/cp -rf "${defaultNetPlan}" "/etc/netplan/netplan-default-$(date -I).yaml.backup"
+  /bin/mv -f "${defaultNetPlan}" "/etc/netplan/netplan-default-$(date -I).yaml.backup"
   # Retrieves NIC Information
   echo -e "\n\n${YEL}$(ip -o link show | awk '{print $2}')${RESET}"
   # Network Configuration
