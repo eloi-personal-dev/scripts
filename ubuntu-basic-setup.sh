@@ -137,7 +137,7 @@ rootAliases() {
 # ITED
 # Safety - prevent deletion of / or prompt if deleting more than 3 files at a time
 alias rm='rm -I --preserve-root'
-  
+
 # Safe Guards
 alias chown='chown --preserve-root'
 alias chmod='chmod --preserve-root'
@@ -354,7 +354,7 @@ EOF
 # shellcheck disable=SC2086
 netplanStaticIP() {
   # Create Backup
-  newNetPlan="etc/netplan/"
+  newNetPlan="/etc/netplan/"
   defaultNetPlan=$(find /etc/netplan/ -name "00-installer-config.yaml")
   /bin/cp -rf "${defaultNetPlan}" "/etc/netplan/netplan-default-$(date -I).yaml.backup"
   # Retrieves NIC Information
