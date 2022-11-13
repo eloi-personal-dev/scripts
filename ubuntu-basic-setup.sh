@@ -2,7 +2,7 @@
 
 #
 # Author        :Eloi H.
-# email         :support@it-ed.com
+# email         :support [@] it-ed.com
 # Description   :Script to configure a basic ubuntu server.
 #                Thanks to the internet for making this possible!
 # License       :MIT
